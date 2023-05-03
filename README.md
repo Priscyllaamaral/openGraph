@@ -70,10 +70,10 @@
 
                 },
 
-                setImg(image){
+                async setImg(image){
                   const metaDesc =  document.querySelector('meta[name="imagem"]');
-                  metaDesc.content = image;
-                  this.img = image;
+                  metaDesc.content = await image;
+                  this.img = await image;
 
 
                 }
